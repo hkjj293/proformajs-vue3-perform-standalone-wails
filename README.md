@@ -9,11 +9,16 @@ here: https://wails.io/docs/reference/project-config
 
 ## Project Setup
 
-Install Go.
+You can setup the project by following this [instruction](https://wails.io/docs/gettingstarted/installation)
 
-Install wails.
+Or setting up step-by-step,
 
-Install dependancies.
+1. Install Go with this [link](https://go.dev/doc/install)
+   - Check Go is install properly with `go version`
+   - Plase make sure "~/go/bin" is in your PATH environmental variable
+2. Install wails: `go install github.com/wailsapp/wails/v2/cmd/wails@latest`
+   - Perform Wails system check `wails doctor`
+4. Install dependancies: `npm install`
 
 ## Live Development
 
