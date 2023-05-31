@@ -2,18 +2,28 @@
 
 ## About
 
-This is the official Wails Vue template.
+This is the official Wails + Vue.js 3 + Vite template.
 
 You can configure the project by editing `wails.json`. More information about the project settings can be found
 here: https://wails.io/docs/reference/project-config
 
 ## Project Setup
 
-Install Go.
+You can setup the project by following this [instruction](https://wails.io/docs/gettingstarted/installation)
 
-Install wails.
+Or setting up step-by-step,
 
-Install dependancies.
+1. Install Go with this [link](https://go.dev/doc/install)
+   - Check Go is install properly with `go version`
+   - Plase make sure "~/go/bin" is in your PATH environmental variable
+2. Install wails: `go install github.com/wailsapp/wails/v2/cmd/wails@latest`
+   - Perform Wails system check `wails doctor`
+4. Install dependancies:
+```sh
+cd ./frontend
+npm install
+cd ..
+```
 
 ## Live Development
 
@@ -25,3 +35,4 @@ to this in your browser, and you can call your Go code from devtools.
 ## Building
 
 To build a redistributable, production mode package, use `wails build`.
+All the installers and binaries will be located in `build/bin`
