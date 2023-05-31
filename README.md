@@ -18,7 +18,12 @@ Or setting up step-by-step,
    - Plase make sure "~/go/bin" is in your PATH environmental variable
 2. Install wails: `go install github.com/wailsapp/wails/v2/cmd/wails@latest`
    - Perform Wails system check `wails doctor`
-4. Install dependancies: `npm install`
+4. Install dependancies:
+```sh
+cd ./frontend
+npm install
+cd ..
+```
 
 ## Live Development
 
