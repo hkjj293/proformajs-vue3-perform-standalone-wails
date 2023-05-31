@@ -118,27 +118,23 @@ export default {
 </script>
 
 <template>
-  <div id="app">
-    <main role="main">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3">
-        <div class="container-fluid">
-          <div class="navbar-brand">PRO<em>formajs</em></div>
-        </div>
-      </nav>
-      <div class="container-fluid">
-        <p-protocol
-          :protocol="protocol"
-          :debug="true"
-          :initialData="startData"
-          :template="
-            protocol && protocol.meta && protocol.meta.enact && protocol.meta.enact.template
-              ? protocol.meta.enact.template
-              : 'compact'
-          "
-        />
-      </div>
-    </main>
-  </div>
+  <main role="main">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3">
+      <div class="navbar-brand">PRO<em>formajs</em></div>
+    </nav>
+    <div class="container-fluid mt-3">
+      <p-protocol
+        :protocol="protocol"
+        :debug="true"
+        :initialData="startData"
+        :template="
+          protocol && protocol.meta && protocol.meta.enact && protocol.meta.enact.template
+            ? protocol.meta.enact.template
+            : 'compact'
+        "
+      />
+    </div>
+  </main>
 </template>
 
 <style>
